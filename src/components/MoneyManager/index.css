@@ -1,0 +1,229 @@
+/* Write your CSS here */
+.app-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.responsive-container {
+  width: 80%;
+  max-width: 550px;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    max-width: 1550px;
+  }
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  height: 172px;
+  border-radius: 16px;
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-container {
+    align-items: flex-start;
+    padding: 48px;
+  }
+}
+
+.heading {
+  color: #475569;
+  font-family: 'roboto';
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 34px;
+  }
+}
+
+.header-content {
+  color: #475569;
+  font-family: 'roboto';
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    color: #475569;
+    font-family: 'roboto';
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.money-manager-text {
+  color: #0b69ff;
+  font-weight: 500;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-details {
+    flex-direction: row;
+  }
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 424px;
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-form {
+    width: 40%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+.transaction-heading {
+  color: #475569;
+  font-size: 16px;
+  font-family: 'roboto';
+  line-height: 1.6;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .transaction-heading {
+    font-size: 20px;
+  }
+}
+.input-label {
+  color: #7e858e;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'roboto';
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+.input {
+  color: #1e293b;
+  background-color: #fff;
+  border: 1px solid #d7dfe9;
+  border-radius: 2px;
+  font-family: 'roboto';
+  line-height: 1.4;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-width: 157px;
+}
+
+.button {
+  background-color: #0b69ff;
+  color: #fff;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 25px;
+  border: none;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+}
+
+.history-container {
+  width: 100%;
+  min-height: 326px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .history-container {
+    width: 50%;
+    min-height: 426px;
+    border: 1px solid #cbd5e1;
+    border-radius: 24px;
+    padding-left: 42px;
+    padding-right: 24px;
+    padding-top: 42px;
+    padding-bottom: 32px;
+    margin-top: 0;
+  }
+}
+
+.transaction-table {
+  padding-left: 0;
+  margin: 0;
+}
+
+.transaction-table-container {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 48px;
+  list-style-type: none;
+  border: 1px solid #cbd5e1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .table-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.table-header-cell {
+  color: #334155;
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: 500;
+  width: 30%;
+  border-right: none;
+}
+
+@media screen and (min-width: 768px) {
+  .table-header-cell {
+    font-size: 16px;
+  }
+}
